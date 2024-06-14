@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "email-op"
+version = "0.1.0"
+description = ""
+authors = ["chaithanya <chaithanya2934@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0.6"
+djangorestframework = "^3.15.1"
+django-extensions = "^3.2.3"
+google-api-python-client = "^2.133.0"
+google-auth-httplib2 = "^0.2.0"
+google-auth-oauthlib = "^1.2.0"
+python-dotenv = "^1.0.1"
+django-getenv = "^1.3.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
