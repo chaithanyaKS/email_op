@@ -8,7 +8,9 @@ from rest_framework.request import Request
 from rest_framework.response import Response
 
 from core.models import Email
-from core.processor import DBSearchEngine, GmailProcessExecutor, GmailProcessor
+from core.processor.email_processor import GmailProcessor
+from core.processor.process_executor.gmail_executor import GmailProcessExecutor
+from core.processor.search_engine.db_search_engine import DBSearchEngine
 
 
 @api_view(["GET"])
