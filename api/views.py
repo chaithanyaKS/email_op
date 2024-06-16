@@ -21,6 +21,9 @@ def ping(request: Request) -> Response:
 @api_view(["POST"])
 def process_email(request: Request) -> Response:
     file = request.FILES.get("file", None)
+    print(f"{request.content_type=}")
+    print(f"{request.FILES=}")
+    print(f"{request.POST=}")
     if file is None:
         return Response({"detail": "missing file"}, status=status.HTTP_400_BAD_REQUEST)
     try:
