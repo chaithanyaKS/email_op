@@ -1,6 +1,5 @@
 import base64
 import os.path
-from datetime import datetime
 from typing import Protocol
 
 from dateutil.parser import parse
@@ -10,7 +9,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
-from loader.models import Email
+from core.models import Email
 
 SCOPES = ["https://www.googleapis.com/auth/gmail.readonly"]
 MULTIPART_MIME_TYPES = ["multipart/alternative", "multipart/mixed", "multipart/related"]
