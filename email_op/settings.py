@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+
 from dotenv import load_dotenv
 from getenv import env
 
@@ -43,6 +44,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "django_extensions",
+    "loader",
+    "api",
 ]
 
 MIDDLEWARE = [
