@@ -16,4 +16,5 @@ class GmailProcessor:
     def execute(self, search_engine: SearchEngine, executor: ProcessExecutor):
         for process in self._processes:
             msg_ids = search_engine.search(process.rule)
+            print(msg_ids)
             executor.execute(process.actions, msg_ids)
