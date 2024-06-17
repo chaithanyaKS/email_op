@@ -38,5 +38,9 @@ python manage.py runserver
 python manage.py load
 ```    
 
-### Accessing the api
-1. Send a POST request to http://localhost/api/email/process/ with the a json file constructed with the rules-example.json.
+### Processing email
+1. Make sure the migrations are applied to the database.
+2. Run the following command to perform operations on email and pass in the operations similar to rule-example.json
+```bash
+python manage.py process rule-example.json
+```
